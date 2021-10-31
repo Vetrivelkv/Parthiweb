@@ -19,35 +19,13 @@ const Header = () => {
 
             {/* <!--Nav Links--> */}
             <div className="collapse navbar-collapse" id="agency">
-              <div className="navbar-nav ml-auto">
-                <a className="nav-link link scroll active" href="#home">
-                  Home
-                </a>
-                <a className="nav-link link scroll" href="#about-us">
-                  About Us
-                </a>
-                <a className="nav-link link scroll" href="#portfolio">
-                  Our Work
-                </a>
-                <a className="nav-link link scroll" href="#clients">
-                  Clients
-                </a>
-                <a className="nav-link link scroll" href="#blog">
-                  Our Blog
-                </a>
-                <a className="nav-link link scroll" href="#contact">
-                  Contact Us
-                </a>
-                <span className="menu-line">
-                  <i aria-hidden="true" className="fa fa-angle-down"></i>
-                </span>
-              </div>
+              
               <a
-                className="btn btn-medium btn-rounded btn-transparent-white btn-hvr-white ml-3"
+                className="btn btn-medium btn-rounded btn-transparent-white btn-hvr-white ml-3 moveQuoteBtn"
                 data-animation-duration="500"
                 data-fancybox
                 data-src="#animatedModal"
-                href="#!"
+                href="#!"                                
               >
                 Get A Quote
                 <div className="btn-hvr-setting">
@@ -69,25 +47,7 @@ const Header = () => {
             </button>
 
             {/* <!--Slider Social--> */}
-            <div className="slider-social">
-              <ul className="list-unstyled">
-                <li className="animated-wrap">
-                  <a className="animated-element" href="#!">
-                    <i aria-hidden="true" className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li className="animated-wrap">
-                  <a className="animated-element" href="#!">
-                    <i aria-hidden="true" className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li className="animated-wrap">
-                  <a className="animated-element" href="#!">
-                    <i aria-hidden="true" className="fab fa-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </nav>
 

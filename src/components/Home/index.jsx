@@ -320,7 +320,7 @@ const Home = () => {
                     fontFamily: "Montserrat",
                   }}
                 >
-                  Creative
+                  VKR
                 </div>
 
                 {/* <!-- LAYER NR. 10 --> */}
@@ -356,7 +356,7 @@ const Home = () => {
                     fontFamily: "Montserrat",
                   }}
                 >
-                  Digital Agency
+                  Videos
                 </div>
 
                 {/* <!-- LAYER NR. 11 --> */}
@@ -392,9 +392,9 @@ const Home = () => {
                     fontFamily: "Roboto",
                   }}
                 >
-                  Lorem ipsum is simply dummy text of the printing and
-                  typesetting. Lorem Ipsum has been the industry’s standard
-                  dummy. Lorem Ipsum has been the industry’s standard dummy.
+                  To us photography is a way of feeling, of touching, of loving.
+                  What you have caught on film is captured forever… It remembers
+                  little things, long after you have forgotten everything.
                 </div>
 
                 {/* <!-- LAYER NR. 12 --> */}
@@ -415,26 +415,13 @@ const Home = () => {
                   data-width="['650','650','600','500']"
                   data-x="['center','center','center','center']"
                   data-y="['middle','middle','middle','middle']"
-                  id="slide-43-layer-15"                
+                  id="slide-43-layer-15"
                   style={{
                     zIndex: "16",
                     whiteSpace: "nowrap",
                   }}
                 >
-                  <a
-                    className="btn btn-slider btn-rounded btn-blue btn-hvr-white"
-                    href="#!"
-                  >
-                    Learn More
-                    <div className="btn-hvr-setting">
-                      <ul className="btn-hvr-setting-inner">
-                        <li className="btn-hvr-effect"></li>
-                        <li className="btn-hvr-effect"></li>
-                        <li className="btn-hvr-effect"></li>
-                        <li className="btn-hvr-effect"></li>
-                      </ul>
-                    </div>
-                  </a>
+                  
                 </div>
 
                 {/* <!-- LAYER NR. 13 --> */}

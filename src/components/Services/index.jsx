@@ -11,7 +11,7 @@ const Services = () => {
                   <i aria-hidden="true" className="fas fa-folder-open"></i>
                 </span>
                 <h4 className="service-heading">
-                  World leader in consulting and finance
+                  Flashes with a smile
                 </h4>
               </div>
             </div>
@@ -21,7 +21,7 @@ const Services = () => {
                   <i aria-hidden="true" className="fas fa-code"></i>
                 </span>
                 <h4 className="service-heading">
-                  A focused team with a specialized skill
+                A focused team with a specialized skill
                 </h4>
               </div>
             </div>
@@ -31,7 +31,7 @@ const Services = () => {
                   <i aria-hidden="true" className="fas fa-cog"></i>
                 </span>
                 <h4 className="service-heading">
-                  Trusted and professional advisors for you
+                Trusted and professional photographers for you
                 </h4>
               </div>
             </div>
@@ -49,6 +49,7 @@ const Services = () => {
         </div>
       </section>
       {/* <!--Services End--> */}
+      
     </div>
   );
 };
