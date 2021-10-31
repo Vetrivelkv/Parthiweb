@@ -3383,11 +3383,12 @@ input.inputerror, textarea.inputerror, select.inputerror {
     .post-navigation .post-nav-content h6{
         display: none;
     }
+   
 }
 @media screen and (max-width:575px) {
     .box {
         left: 43%;
-    }
+    }    
 }
 
 
@@ -4867,6 +4868,13 @@ input.inputerror, textarea.inputerror, select.inputerror {
     }
     .lastest-blog .pot-2 {
         left: 500px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .lastest-blog{
+        height: 1200px !important;
     }
 }
 

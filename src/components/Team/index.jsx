@@ -6,22 +6,17 @@ const Teams = () => {
     slider();
   }, []);
   return (
-    <div
-      style={{
-        background: "#f71c52",
-        color: "white",
-        height: "500px",
-        marginTop: "5%",
-      }}
-    >
-      <div style={{ padding: "110px 100px" }} class="row">
-        <div class="col-md-5 col-lg-5 col-sm-5">
+    <div className="team_header">
+      <div style={{ padding: "110px,100px" }} class="row">
+        <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
           <div>
-            <p style={{ fontSize: "3.5rem", fontWeight: "bold" }}>WE HAVE</p>
+            <p className="headTextTeam" style={{ fontWeight: "bold" }}>
+              WE HAVE
+            </p>
           </div>
 
           <div style={{ paddingTop: "5.4%" }}>
-            <p style={{ fontSize: "3.5rem", fontWeight: "bold" }}>
+            <p className="headTextTeam" style={{ fontWeight: "bold" }}>
               AMAZING TEAM
             </p>
           </div>
@@ -34,7 +29,7 @@ const Teams = () => {
             </p>
           </div>
         </div>
-        <div class="col-md-7 col-lg-7 col-sm-7">
+        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
           <div class="carousel-container">
             <div class="navigation">
               <div class="prev nav-btn">&lt;</div>
@@ -42,33 +37,18 @@ const Teams = () => {
               <div class="carousel">
                 <div class="item_97 main">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                       <img
-                        src="https://megaone.acrothemes.com/creative-startup/img/team1.jpg"
+                        src="/agency/img/vector-art-2.png"
                         alt="client_1"
+                        className="teamSlideMobile"
                       />
                       <div
                         style={{
                           fontWeight: "bold",
                           textAlign: "center",
                         }}
-                      >
-                        <p style={{ fontSize: "1.3rem" }}>Client Name</p>
-                        <p style={{ fontSize: "0.9rem", marginTop: "-25px" }}>
-                          Client Role
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        src="https://megaone.acrothemes.com/creative-startup/img/team1.jpg"
-                        alt="client_2"
-                      />
-                      <div
-                        style={{
-                          fontWeight: "bold",
-                          textAlign: "center",
-                        }}
+                        className="team_caption"
                       >
                         <p style={{ fontSize: "1.3rem" }}>Client Name</p>
                         <p style={{ fontSize: "0.9rem", marginTop: "-25px" }}>
@@ -80,37 +60,22 @@ const Teams = () => {
                 </div>
                 <div class="item_97">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                       <img
-                        src="https://megaone.acrothemes.com/creative-startup/img/team1.jpg"
-                        alt="client_3"
+                        src="/agency/img/vector-art-2.png"
+                        alt="client_1"
+                        className="teamSlideMobile"
                       />
                       <div
                         style={{
                           fontWeight: "bold",
                           textAlign: "center",
                         }}
+                        className="team_caption"
                       >
                         <p style={{ fontSize: "1.3rem" }}>Client Name</p>
                         <p style={{ fontSize: "0.9rem", marginTop: "-25px" }}>
-                          Client Role
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        src="https://megaone.acrothemes.com/creative-startup/img/team1.jpg"
-                        alt="client_4"
-                      />
-                      <div
-                        style={{
-                          fontWeight: "bold",
-                          textAlign: "center",
-                        }}
-                      >
-                        <p style={{ fontSize: "1.3rem" }}>Client Name</p>
-                        <p style={{ fontSize: "0.9rem", marginTop: "-25px" }}>
-                          Client Role
+                          Client Role 2
                         </p>
                       </div>
                     </div>
@@ -118,37 +83,22 @@ const Teams = () => {
                 </div>
                 <div class="item_97">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                       <img
-                        src="https://megaone.acrothemes.com/creative-startup/img/team2.jpg"
-                        alt="client_5"
+                        src="/agency/img/vector-art-2.png"
+                        alt="client_1"
+                        className="teamSlideMobile"
                       />
                       <div
                         style={{
                           fontWeight: "bold",
                           textAlign: "center",
                         }}
+                        className="team_caption"
                       >
                         <p style={{ fontSize: "1.3rem" }}>Client Name</p>
                         <p style={{ fontSize: "0.9rem", marginTop: "-25px" }}>
-                          Client Role
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        src="https://megaone.acrothemes.com/creative-startup/img/team2.jpg"
-                        alt="client_6"
-                      />
-                      <div
-                        style={{
-                          fontWeight: "bold",
-                          textAlign: "center",
-                        }}
-                      >
-                        <p style={{ fontSize: "1.3rem" }}>Client Name</p>
-                        <p style={{ fontSize: "0.9rem", marginTop: "-25px" }}>
-                          Client Role
+                          Client Role 3
                         </p>
                       </div>
                     </div>

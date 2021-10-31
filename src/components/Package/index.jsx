@@ -7,15 +7,7 @@ const Package = () => {
       >
         Most flexible one page
       </div>
-      <div
-        style={{
-          fontWeight: "bold",
-          textAlign: "center",
-          width: "15%",
-          marginLeft: "43%",
-          marginTop: "1.5%",
-        }}
-      >
+      <div className="packageInnerContainer1">
         <p style={{ fontSize: "1.3rem" }}>
           Very flexible pricing for your project.
         </p>
@@ -42,9 +34,9 @@ const Package = () => {
           marginTop: "5%",
           marginBottom: "5%",
           marginLeft: "22.5%",
-          marginRight: "10.5%",
-          display: "flex",
+          marginRight: "10.5%",          
         }}
+        className="row"
       >
         <div className="pacakgeContainer">
           <div style={{ paddingTop: "4%" }}>

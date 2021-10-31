@@ -1,6 +1,6 @@
 .carousel-container {
   width: 600px;
-  height: 400px;
+  height: 650px;
   position: relative;
   margin: 0 auto;
 }
@@ -40,7 +40,6 @@
 }
 
 .carousel {
-  margin-top: 20px;
   transition: all 0.3s ease;
 }
 
@@ -51,4 +50,44 @@
 
 .main {
   display: block;
+  transition: 2s;
+  left: 0;
+}
+.team_header {
+  background-color: #f71c52;
+  color: white;
+  height: 650px;
+  margin-top: 5%;
+}
+.headTextTeam {
+  font-size: 3.5 rem;
+}
+
+@media screen and (max-width: 966px) {
+  .team_header {
+    height: 580px;
+  }
+  .teamSlideMobile {
+    width: 250px;
+    padding-top: 86px;
+    margin-left: 60px;
+  }
+  .carousel-container {
+    width: 350px;
+  }
+  .navigation .prev {
+    font-size: 15px;
+    top: 28%;
+    left: 2px;
+  }
+  .navigation .next {
+    right: 0px;
+    top: 28%;
+  }
+  .headTextTeam {
+    font-size: 1.5rem;
+  }
+  .team_caption {
+    margin-left: 12%;
+  }
 }
