@@ -7,7 +7,7 @@ const Teams = () => {
   }, []);
   return (
     <div className="team_header">
-      <div style={{ padding: "110px,100px" }} class="row">
+      <div  class="row teams_inner_head">
         <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
           <div>
             <p className="headTextTeam" style={{ fontWeight: "bold" }}>

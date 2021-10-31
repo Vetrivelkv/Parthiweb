@@ -59,10 +59,12 @@
   height: 650px;
   margin-top: 5%;
 }
-.headTextTeam {
-  font-size: 3.5 rem;
+.teams_inner_head p{
+  font-size: 3.5rem;
 }
-
+.teams_inner_head{
+  padding:100px
+}
 @media screen and (max-width: 966px) {
   .team_header {
     height: 580px;
@@ -84,7 +86,10 @@
     right: 0px;
     top: 28%;
   }
-  .headTextTeam {
+  .teams_inner_head{
+    padding:0px
+  }
+  .teams_inner_head p{
     font-size: 1.5rem;
   }
   .team_caption {

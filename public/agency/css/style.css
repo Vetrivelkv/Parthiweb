@@ -1419,6 +1419,7 @@ span.anchor-circle{
 
 .cube-portfolio1 .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active{
     color:#f021b6;
+    background-color: white !important;
 }
 
 .cube-portfolio1 .cbp-l-grid-mosaic-flat .cbp-caption-activeWrap {
