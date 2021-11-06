@@ -8,7 +8,7 @@ const TeamStart = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="heading-area mx-570 mb-5">
-                <span className="sub-title">We are megaone company</span>
+                <span className="sub-title">We are VKR Videos</span>
                 <h2 className="title">
                   We have some{" "}
                   <span className="alt-color js-rotating">great, ideal</span>{" "}

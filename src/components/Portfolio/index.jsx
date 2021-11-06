@@ -11,14 +11,8 @@ const PortFolio = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="heading-area mx-570 mb-lg-4 mb-3">
-                <span className="sub-title">We are megaone company</span>
-                <h2 className="title">
-                  We have{" "}
-                  <span className="alt-color js-rotating">
-                    designed, developed
-                  </span>{" "}
-                  some great projects
-                </h2>
+                <span className="sub-title">We are VKR Videos</span>
+                <h2 className="title">We have designed some great projects</h2>
                 <p className="para">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some

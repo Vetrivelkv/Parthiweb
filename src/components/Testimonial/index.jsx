@@ -260,44 +260,44 @@ const Testimonial = () => {
           <div className="owl-dots" id="testimonials-avatar">
             {/* <!--data-position[top,right,bottom,left]--> */}
             <button className="owl-dot active" data-position="22%,auto,auto,5%">
-              <img alt="avatr1" src="agency/img/avatar-1.png" />
+              <img alt="avatr1" src="images/avatar-1.png" />
             </button>
             <button
               className="owl-dot active"
               data-position="30%,auto,auto,16%"
             >
-              <img alt="avatar" src="agency/img/avatar-2.png" />
+              <img alt="avatar" src="images/avatar-2.png" />
             </button>
             <button className="owl-dot active" data-position="auto,auto,38%,7%">
-              <img alt="iav" src="agency/img/avatar-3.png" />
+              <img alt="iav" src="images/avatar-3.png" />
             </button>
             <button
               className="owl-dot active"
               data-position="auto,auto,23%,18%"
             >
-              <img alt="iav" src="agency/img/avatar-7.png" />
+              <img alt="iav" src="images/avatar-7.png" />
             </button>
             {/* <!--data-position[top,right,bottom,left]--> */}
             <button
               className="owl-dot active"
               data-position="20%,19%,auto,auto"
             >
-              <img alt="iav" src="agency/img/avatar-5.png" />
+              <img alt="iav" src="images/avatar-5.png" />
             </button>
             <button className="owl-dot active" data-position="28%,6%,auto,auto">
-              <img alt="iav" src="agency/img/avatar-6.png" />
+              <img alt="iav" src="images/avatar-6.png" />
             </button>
             <button
               className="owl-dot active"
               data-position="40%,15%,auto,auto"
             >
-              <img alt="iav" src="agency/img/avatar-4.png" />
+              <img alt="iav" src="images/avatar-4.png" />
             </button>
             <button
               className="owl-dot active"
               data-position="auto,21%,22%,auto"
             >
-              <img alt="iav" src="agency/img/avatar-2.png" />
+              <img alt="iav" src="images/avatar-2.png" />
             </button>
           </div>
         </div>

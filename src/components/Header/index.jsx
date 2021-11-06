@@ -1,8 +1,6 @@
-
 const Header = () => {
   return (
     <div>
-        
       {/* <!--Header Start--> */}
       <header className="cursor-light">
         {/* <!--Navigation--> */}
@@ -10,22 +8,22 @@ const Header = () => {
           <div className="container">
             <a className="logo link scroll" href="#!" title="Logo">
               {/* <!--Logo Default--> */}
-              <img
+              {/* <img
                 alt="logo"
                 className="logo-dark default"
                 src="/agency/img/logo-white.png"
-              />
+              /> */}
+              <h3 style={{ color: "white" }}>VKR Videos</h3>
             </a>
 
             {/* <!--Nav Links--> */}
             <div className="collapse navbar-collapse" id="agency">
-              
               <a
                 className="btn btn-medium btn-rounded btn-transparent-white btn-hvr-white ml-3 moveQuoteBtn"
                 data-animation-duration="500"
                 data-fancybox
                 data-src="#animatedModal"
-                href="#!"                                
+                href="#!"
               >
                 Get A Quote
                 <div className="btn-hvr-setting">
@@ -40,14 +38,17 @@ const Header = () => {
             </div>
 
             {/* <!--Menu Button--> */}
-            <button className="fullnav-toggler link" id="full-menu-1" type="button">
+            <button
+              className="fullnav-toggler link"
+              id="full-menu-1"
+              type="button"
+            >
               <span className="line"></span>
               <span className="line"></span>
               <span className="line"></span>
             </button>
 
             {/* <!--Slider Social--> */}
-            
           </div>
         </nav>
 
@@ -130,7 +131,7 @@ const Header = () => {
         <div className="animated-modal hidden quote-content" id="animatedModal">
           {/* <!--Heading--> */}
           <div className="heading-area pb-2 mx-570">
-            <span className="sub-title">We are megaone company</span>
+            <span className="sub-title">We are VKR Videos</span>
             <h2 className="title mt-2">
               Lets start your{" "}
               <span className="alt-color js-rotating">project, website</span>

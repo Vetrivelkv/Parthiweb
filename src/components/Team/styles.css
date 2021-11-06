@@ -59,15 +59,34 @@
   height: 650px;
   margin-top: 5%;
 }
-.teams_inner_head p{
+.teams_inner_head p {
   font-size: 3.5rem;
 }
-.teams_inner_head{
-  padding:100px
+.teams_inner_head {
+  padding: 100px;
+}
+
+.add_Integration {
+  margin-top: 100px !important;
+}
+.team_caption {
+  padding-top: 20px;
 }
 @media screen and (max-width: 966px) {
+  .add_Integration {
+    margin-top: 0px !important;
+  }
+
+  
+  #headerTeam1 {
+    margin-top: 60px;
+  }
+  .carousel {
+    margin-top: -55px;
+  }
   .team_header {
     height: 580px;
+    margin-top: 1px;
   }
   .teamSlideMobile {
     width: 250px;
@@ -86,13 +105,14 @@
     right: 0px;
     top: 28%;
   }
-  .teams_inner_head{
-    padding:0px
+  .teams_inner_head {
+    padding: 0px;
   }
-  .teams_inner_head p{
+  .teams_inner_head p {
     font-size: 1.5rem;
   }
   .team_caption {
     margin-left: 12%;
+    padding-top: 10px;
   }
 }

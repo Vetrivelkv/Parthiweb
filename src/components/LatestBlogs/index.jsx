@@ -1,8 +1,39 @@
 import { useEffect, useState } from "react";
-
+import { useInView } from "react-intersection-observer";
 const LatestBlogs = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    triggerOnce: false,
+    threshold: 0,
+  });
   const [slidercontent, setSliderContent] = useState([]);
   const [slideCount, setSlideCount] = useState(0);
+
+  useEffect(() => {
+    //do something here when inView is true
+    if (inView) {
+      document.getElementById("latestBlogHeader").classList.add("fadeInRight");
+      document
+        .getElementById("latestBlogHeader2")
+        .classList.add("fromTopClass");
+      setTimeout(() => {
+        document
+          .getElementById("latestBlogHeader")
+          .classList.remove("fadeInRight");
+      }, 800);
+    } else {
+      if (document.getElementById("latestBlogHeader")) {
+        document
+          .getElementById("latestBlogHeader")
+          .classList.remove("fadeInRight");
+      }
+      if (document.getElementById("latestBlogHeader2")) {
+        document
+          .getElementById("latestBlogHeader2")
+          .classList.remove("fromTopClass");
+      }
+    }
+  }, [inView]);
   useEffect(() => {
     setSliderContent([
       {
@@ -33,10 +64,12 @@ const LatestBlogs = () => {
   }, []);
 
   const increaseSlide = () => {
-    console.log(slideCount);
     if (slideCount < 3) {
       const count = slideCount + 1;
       setSlideCount(count);
+    }
+    if (slideCount === 3) {
+      setSlideCount(0);
     }
   };
 
@@ -45,11 +78,26 @@ const LatestBlogs = () => {
       const count = slideCount - 1;
       setSlideCount(count);
     }
+    if (slideCount === 0) {
+      setSlideCount(3);
+    }
   };
+  useEffect(() => {
+    setInterval(() => {
+      if (slideCount < 3) {
+        const count = slideCount + 1;
+        setSlideCount(count);
+      }
+      if (slideCount === 3) {
+        setSlideCount(0);
+      }
+    }, 12000);
+  }, [slideCount]);
+
   return (
     <div>
       {slidercontent.length > 0 ? (
-        <div>
+        <div ref={ref}>
           <section className="lastest-blog" id="lastest-blog">
             <svg
               className="separator__svg"
@@ -69,8 +117,12 @@ const LatestBlogs = () => {
               <div className="container position-relative">
                 <div className="row">
                   <div className="col-12 col-md-12 col-lg-6">
-                    <div className="blog-content slider-detail wow fadeInDown">
-                      <div className="slider-slide">
+                    <div className="blog-content slider-detail">
+                      <div
+                        className="slider-slide"
+                        id="latestBlogHeader"
+                        onTouchStart={increaseSlide}
+                      >
                         <h1>
                           <span>{slidercontent[slideCount].title1} </span>{" "}
                           {slidercontent[slideCount].title2}{" "}
@@ -86,8 +138,12 @@ const LatestBlogs = () => {
                     </div>
                   </div>
                   <div className="col-12 col-md-12 col-lg-6">
-                    <div className="blog-img wow fadeInUp">
-                      <img src="digital-agency/img/blog-mokeup.png" alt="1" />
+                    <div className="blog-img">
+                      <img
+                        src="digital-agency/img/blog-mokeup.png"
+                        alt="1"
+                        id="latestBlogHeader2"
+                      />
                       <div className="slider-img"></div>
                     </div>
                   </div>
@@ -128,7 +184,7 @@ const LatestBlogs = () => {
               src={window.location.origin + "/digital-agency/img/pot-2.png"}
               alt="plant"
               className="pot-2 wow slideInLeft"
-              data-wow-delay=".5s"
+              data-wow-delay=".1s"
             />
           </section>
         </div>

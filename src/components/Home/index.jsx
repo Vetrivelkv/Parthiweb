@@ -420,9 +420,7 @@ const Home = () => {
                     zIndex: "16",
                     whiteSpace: "nowrap",
                   }}
-                >
-                  
-                </div>
+                ></div>
 
                 {/* <!-- LAYER NR. 13 --> */}
                 <div
@@ -462,7 +460,7 @@ const Home = () => {
                       data-hh="['604px','510','510','510']"
                       data-no-retina
                       data-ww="['434px','350','350','350']"
-                      src="agency/img/vector-art-1.png"
+                      src="images/vector-art-1.png"
                     />
                   </div>
                 </div>
