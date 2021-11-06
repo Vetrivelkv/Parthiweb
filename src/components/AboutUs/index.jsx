@@ -56,7 +56,7 @@ const AboutUs = () => {
                 id="headerAboutUs"
               >
                 {/* <img alt="vector" src="agency/img/vector-art-2.png" /> */}
-                <img alt="vector" src="images/2.png" />
+                <img alt="vector" src="images/2.PNG" />
               </div>
             </div>
           </div>
