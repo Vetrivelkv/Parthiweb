@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 const Counters = () => {
   const { ref, inView } = useInView({
     /* Optional options */
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0,
   });
 
@@ -20,7 +20,7 @@ const Counters = () => {
   }, [inView]);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} style={{marginTop:'-150px'}}>
       {/* <!--Counters Start--> */}
       <section class="gradient-bg2" id="counters">
         <div class="container">

@@ -5,7 +5,7 @@ import "./styles.css";
 const Teams = () => {
   const { ref, inView } = useInView({
     /* Optional options */
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0,
   });
 

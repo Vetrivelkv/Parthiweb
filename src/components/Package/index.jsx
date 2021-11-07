@@ -6,7 +6,7 @@ const Package = () => {
   const [slideActive, setSlideActive] = useState(0);
   const { ref, inView } = useInView({
     /* Optional options */
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0,
   });
 
@@ -14,9 +14,9 @@ const Package = () => {
     //do something here when inView is true
     if (inView) {
       console.log("see whether");
-      document.getElementById("scrollArea").classList.add("fromRightClass");
+      document.getElementById("scrollArea").classList.add("fadingInClass");
     } else {
-      document.getElementById("scrollArea").classList.remove("fromRightClass");
+      document.getElementById("scrollArea").classList.remove("fadingInClass");
     }
   }, [inView]);
 

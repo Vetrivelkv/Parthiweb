@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 const LatestBlogs = () => {
   const { ref, inView } = useInView({
     /* Optional options */
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0,
   });
   const [slidercontent, setSliderContent] = useState([]);
@@ -12,25 +12,27 @@ const LatestBlogs = () => {
   useEffect(() => {
     //do something here when inView is true
     if (inView) {
-      document.getElementById("latestBlogHeader").classList.add("fadeInRight");
+      document
+        .getElementById("latestBlogHeader")
+        .classList.add("fadingInClass");
       document
         .getElementById("latestBlogHeader2")
-        .classList.add("fromTopClass");
+        .classList.add("fadingInClass");
       setTimeout(() => {
         document
           .getElementById("latestBlogHeader")
-          .classList.remove("fadeInRight");
+          .classList.remove("fadingInClass");
       }, 800);
     } else {
       if (document.getElementById("latestBlogHeader")) {
         document
           .getElementById("latestBlogHeader")
-          .classList.remove("fadeInRight");
+          .classList.remove("fadingInClass");
       }
       if (document.getElementById("latestBlogHeader2")) {
         document
           .getElementById("latestBlogHeader2")
-          .classList.remove("fromTopClass");
+          .classList.remove("fadingInClass");
       }
     }
   }, [inView]);
@@ -82,17 +84,17 @@ const LatestBlogs = () => {
       setSlideCount(3);
     }
   };
-  useEffect(() => {
-    setInterval(() => {
-      if (slideCount < 3) {
-        const count = slideCount + 1;
-        setSlideCount(count);
-      }
-      if (slideCount === 3) {
-        setSlideCount(0);
-      }
-    }, 12000);
-  }, [slideCount]);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     if (slideCount < 3) {
+  //       const count = slideCount + 1;
+  //       setSlideCount(count);
+  //     }
+  //     if (slideCount === 3) {
+  //       setSlideCount(0);
+  //     }
+  //   }, 15000);
+  // }, [slideCount]);
 
   return (
     <div>
